@@ -51,10 +51,10 @@ def analyze_data(data):
 # Main program
 def main():
     st.title('ANOVA REGRESI KORELASI')
-    st.write('Im not lazy, Im just on energy-saving mode! yukk excellent nyaa ditunggu xixixiixi')
+    st.write('Coba dulu aja input datanya, ga error kok')
 
     # Input data manual
-    st.header('Input Data Manual \nJumlah data X = Jumlah data Y')
+    st.header('Input Data Manual \nCatatan: Jumlah data X = Jumlah data Y')
     num_points = st.number_input('Jumlah titik data', min_value=1, step=1, value=100)
     data = pd.DataFrame()
     data['X'] = st.multiselect('Pilih nilai X', list(range(1, 100)), [], key='X')
